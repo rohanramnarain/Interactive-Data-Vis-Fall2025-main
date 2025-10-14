@@ -25,7 +25,7 @@ This page shows a complete example using **Markdown**, **HTML**, and **Observabl
 <div class="page">
 
 <!-- HTML IMAGE -->
-<img class="hero" src="./assets/banner.png" alt="Interactive Data Visualization banner" />
+<img class="hero" src="./assets/pages.png" alt="Interactive Data Visualization banner" />
 
 ### Tracking Progress (HTML Table)
 <table>
