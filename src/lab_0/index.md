@@ -1,21 +1,20 @@
 ---
-title: Lab 0 Work — Lini
+title: Lab 0 Work — Rohan R.
 toc: false
 ---
 
 # Lab 0 Work
-by Lini
+by Rohan R.
 
 _**Beginning of Interactive Data Visualization Labs**_
 
 ## Learning Goals
-This page shows how to build an interactive dashboard **entirely in one Markdown file** using HTML and Observable JS cells.
+This page shows a complete example using **Markdown**, **HTML**, and **Observable JS** in one file.
 
-<!-- Minimal styles -->
 <style>
   :root { --maxw: 920px; }
   .page { max-width: var(--maxw); margin: 0 auto; padding: 1.5rem 1rem; line-height: 1.6; }
-  table { width:100%; border-collapse: collapse; margin:.75rem 0 1.25rem; font-size: 0.95rem; }
+  table { width:100%; border-collapse: collapse; margin:.75rem 0 1.25rem; font-size:.95rem; }
   th, td { border:1px solid #e6e6e6; padding:.55rem .6rem; vertical-align: top; }
   th { background:#fafafa; text-align:left; }
   .hero { width:100%; border-radius:12px; display:block; margin:.5rem 0 1rem; }
@@ -26,10 +25,9 @@ This page shows how to build an interactive dashboard **entirely in one Markdown
 <div class="page">
 
 <!-- HTML IMAGE -->
-<img class="hero" src="./assets/cat.png" alt="Interactive Data Visualization banner" />
+<img class="hero" src="./assets/banner.png" alt="Interactive Data Visualization banner" />
 
 ### Tracking Progress (HTML Table)
-<!-- HTML TABLE -->
 <table>
   <thead><tr><th>Goals</th><th>Progress</th></tr></thead>
   <tbody>
@@ -40,7 +38,6 @@ This page shows how to build an interactive dashboard **entirely in one Markdown
 </table>
 
 ### Challenges (HTML List)
-<!-- HTML LIST -->
 <ul>
   <li>Understanding the tools</li>
   <li>Grasping the concepts behind visualizations</li>
@@ -48,13 +45,15 @@ This page shows how to build an interactive dashboard **entirely in one Markdown
   <li>Not getting lost in the details</li>
 </ul>
 
-## Mini Dashboard (JS inputs → visible changes)
+## Mini Dashboard (inputs → visible changes)
 
 ```js
+
 import { Inputs } from "@observablehq/inputs";
+Copy code
 viewof name = Inputs.text({
   label: "Enter your name",
-  placeholder: "e.g., Lini"
+  placeholder: "e.g., Rohan R."
 })
 
 md`**Welcome to Interactive Data Visualization${name ? `, ${name}` : ""}!**`
