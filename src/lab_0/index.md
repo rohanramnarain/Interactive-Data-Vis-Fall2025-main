@@ -69,7 +69,7 @@ This page demonstrates the required pieces: **Markdown** headers & text, **HTML*
 <!-- Replace src with your Tableau Public embed URL -->
 <iframe
   title="Tableau visualization"
-  src="https://public.tableau.com/views/YourWorkbookName/YourWorksheetName?:showVizHome=no&:embed=true"
+  src="https://public.tableau.com/views/DataViz_StudioCritique_March11_Viz3/HeatMap_NoiseBarkingDog_NYC_2010to2025?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
   height="620"
   loading="lazy"
   allowfullscreen

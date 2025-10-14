@@ -4,3 +4,35 @@ toc: true
 ---
 
 This page is where you can iterate. Follow the lab instructions in the [readme.md](./README.md).
+
+<!-- ```js
+const text = view(Inputs.text())
+```
+This is the value of text: ${text} -->
+
+```js
+Plot.plot({
+    width: 300,
+    height: 200,
+    marks: [
+        Plot.frame(),
+        Plot.text(["text"], {frameAnchor: "middle", rotate: 90})
+    ]
+})
+```
+
+```js
+// view(aapl)
+Inputs.table(aapl)
+```
+
+```js
+Plot.plot({
+    width: 300,
+    height: 200,
+    marks: [
+        Plot.frame(),
+        Plot.line(aapl)
+
+    ]
+})
