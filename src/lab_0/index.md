@@ -31,7 +31,7 @@ This page demonstrates the required pieces: **Markdown** headers & text, **HTML*
 <div class="page">
 
 <!-- HTML IMAGE -->
-<img class="hero" src="./assets/banner.png" alt="Interactive Data Visualization banner" />
+<img class="hero" src="./assets/fork.png" alt="Interactive Data Visualization banner" />
 
 ### Tracking Progress (HTML Table)
 <table>
