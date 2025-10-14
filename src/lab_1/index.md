@@ -28,11 +28,17 @@ Inputs.table(aapl)
 
 ```js
 Plot.plot({
-    width: 300,
+ 
     height: 200,
+    y: {
+        grid: true
+    },
     marks: [
         Plot.frame(),
-        Plot.line(aapl)
+        Plot.line(aapl, { x: "Date", y: "Close", stroke: "pink", strokeWidth: 20}),
+        Plot.dot(aapl, { x: "Date", y: "Close", tip: true, r: 1, fill: "white"}),
+        // Plot.line(goog, { x: })
+
 
     ]
 })
