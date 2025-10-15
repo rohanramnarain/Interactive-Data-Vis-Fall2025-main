@@ -38,7 +38,7 @@ const pollinators = await FileAttachment("./data/pollinator_activity_data.csv").
 // Derived helpers
 // -----------------------------------------------------------------------------
 
-// Long-form weather view so we can facet temperature / humidity / wind neatly.
+// Long-form weather view (kept for possible extensions).
 const weatherLong = pollinators.flatMap(d => ([
   {metric: "Temperature (°C)", value: d.temperature, visit_count: d.visit_count, weather_condition: d.weather_condition},
   {metric: "Humidity (%)", value: d.humidity, visit_count: d.visit_count, weather_condition: d.weather_condition},
@@ -120,35 +120,74 @@ const figSpecies = Plot.plot({
 
 // -----------------------------------------------------------------------------
 // Panel B: Ideal weather (conditions + temperature/humidity/wind)
+// FIX: split into three small plots so each metric gets its own x-scale/units.
 // -----------------------------------------------------------------------------
-const peaks = [
-  bestTemp ? {metric: "Temperature (°C)", x: bestTemp.center} : null,
-  bestHum  ? {metric: "Humidity (%)",     x: bestHum.center}  : null,
-  bestWind ? {metric: "Wind Speed (km/h)",x: bestWind.center} : null
-].filter(Boolean);
-
-const figWeather = Plot.plot({
+const figTemp = Plot.plot({
   height: 320,
   marginLeft: 48,
   marginBottom: 40,
+  x: {label: "Temperature (°C)", domain: d3.extent(pollinators, d => d.temperature)},
   y: {grid: true, label: "Mean visit count"},
-  fx: {label: "Weather dimension", domain: ["Temperature (°C)", "Humidity (%)", "Wind Speed (km/h)"]},
   color: {legend: true, label: "Weather condition"},
   marks: [
-    // Smoothed (binned) mean visits, separated by condition, faceted by metric
-    Plot.line(weatherLong, Plot.binX(
-      {y: "mean", thresholds: 12},
-      {fx: "metric", x: "value", y: "visit_count", stroke: "weather_condition"}
+    Plot.dot(pollinators, Plot.binX(
+      {y: "mean", thresholds: 10},
+      {x: "temperature", y: "visit_count", stroke: "weather_condition", r: 2, tip: true}
     )),
-    Plot.dot(weatherLong, Plot.binX(
-      {y: "mean", thresholds: 12},
-      {fx: "metric", x: "value", y: "visit_count", stroke: "weather_condition", r: 2, tip: true}
+    Plot.line(pollinators, Plot.binX(
+      {y: "mean", thresholds: 10},
+      {x: "temperature", y: "visit_count", stroke: "weather_condition"}
     )),
-    // Annotate the overall peaks per metric (dashed vertical rules)
-    Plot.ruleX(peaks, {fx: "metric", x: "x", stroke: "currentColor", strokeDasharray: "4,4", opacity: 0.8}),
+    bestTemp && Plot.ruleX([bestTemp.center], {stroke: "currentColor", strokeDasharray: "4,4", opacity: 0.8}),
     Plot.frame()
   ]
 });
+
+const figHum = Plot.plot({
+  height: 320,
+  marginLeft: 48,
+  marginBottom: 40,
+  x: {label: "Humidity (%)", domain: d3.extent(pollinators, d => d.humidity)},
+  y: {grid: true, label: "Mean visit count"},
+  color: {legend: false},
+  marks: [
+    Plot.dot(pollinators, Plot.binX(
+      {y: "mean", thresholds: 10},
+      {x: "humidity", y: "visit_count", stroke: "weather_condition", r: 2, tip: true}
+    )),
+    Plot.line(pollinators, Plot.binX(
+      {y: "mean", thresholds: 10},
+      {x: "humidity", y: "visit_count", stroke: "weather_condition"}
+    )),
+    bestHum && Plot.ruleX([bestHum.center], {stroke: "currentColor", strokeDasharray: "4,4", opacity: 0.8}),
+    Plot.frame()
+  ]
+});
+
+const figWind = Plot.plot({
+  height: 320,
+  marginLeft: 48,
+  marginBottom: 40,
+  x: {label: "Wind Speed (km/h)", domain: d3.extent(pollinators, d => d.wind_speed)},
+  y: {grid: true, label: "Mean visit count"},
+  color: {legend: false},
+  marks: [
+    Plot.dot(pollinators, Plot.binX(
+      {y: "mean", thresholds: 8},
+      {x: "wind_speed", y: "visit_count", stroke: "weather_condition", r: 2, tip: true}
+    )),
+    Plot.line(pollinators, Plot.binX(
+      {y: "mean", thresholds: 8},
+      {x: "wind_speed", y: "visit_count", stroke: "weather_condition"}
+    )),
+    bestWind && Plot.ruleX([bestWind.center], {stroke: "currentColor", strokeDasharray: "4,4", opacity: 0.8}),
+    Plot.frame()
+  ]
+});
+
+// Assemble Panel B as a single “middle section”
+const figWeather = html`<div style="display:grid;grid-template-columns:repeat(3,minmax(280px,1fr));gap:1rem;"></div>`;
+figWeather.append(figTemp, figHum, figWind);
 
 // -----------------------------------------------------------------------------
 // Panel C: Which flower has the most nectar?
@@ -193,7 +232,7 @@ display(html`<div class="figure-caption">
   <strong>What the dashboard shows:</strong><br/>
   <ul>
     <li><b>Distributions by species:</b> Each facet (left panel) shows the relationship between wing span and body mass for <em>Honeybee</em>, <em>Bumblebee</em>, and <em>Carpenter Bee</em> with a trend line.</li>
-    <li><b>Ideal weather for pollinating:</b> Across all observations, the weather condition with the highest average visits is <b>${bestCondition?.condition ?? "n/a"}</b> (${bestCondition ? d3.format(".2f")(bestCondition.meanVisits) : "n/a"} mean visits). Peaks by metric are marked with dashed lines (middle panel): 
+    <li><b>Ideal weather for pollinating:</b> Across all observations, the weather condition with the highest average visits is <b>${bestCondition?.condition ?? "n/a"}</b> (${bestCondition ? d3.format(".2f")(bestCondition.meanVisits) : "n/a"} mean visits). Peaks by metric are marked with dashed lines (middle section): 
       Temperature ≈ <b>${fmtRange(bestTemp)}</b> °C, 
       Humidity ≈ <b>${fmtRange(bestHum)}</b> %, 
       Wind ≈ <b>${fmtRange(bestWind)}</b> km/h.</li>
