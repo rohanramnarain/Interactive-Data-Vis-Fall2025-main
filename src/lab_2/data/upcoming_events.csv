@@ -1,0 +1,56 @@
+date,event_name,nearby_station,expected_attendance
+2026-06-01,Craft Fair,23 St,5563
+2026-06-02,Comedy Show,Fulton St,4328
+2026-06-03,Cultural Festival,Astor Pl,1726
+2026-06-04,Book Fair,Times Sq-42 St,8035
+2026-06-05,Pride Parade,34 St-Penn Station,11134
+2026-06-06,Art Exhibition Opening,Wall St,3167
+2026-06-07,Gallery Opening,Chambers St,4321
+2026-06-09,Pride Parade,34 St-Penn Station,6959
+2026-06-09,Dance Performance,Chambers St,5621
+2026-06-11,Fireworks Display,28 St,8484
+2026-06-11,Summer Concert Series,59 St-Columbus Circle,4957
+2026-06-12,Theater Performance,Herald Sq-34 St,9312
+2026-06-16,Craft Fair,Canal St,8503
+2026-06-16,Art Exhibition Opening,Fulton St,8511
+2026-06-18,Book Fair,Canal St,12114
+2026-06-20,Book Fair,28 St,12586
+2026-06-21,Cultural Festival,66 St-Lincoln Center,10226
+2026-06-22,Fashion Show,Chambers St,7699
+2026-06-25,Cultural Festival,Canal St,4235
+2026-06-25,Theater Performance,Canal St,6710
+2026-06-27,Gallery Opening,West 4 St-Wash Sq,8238
+2026-06-27,Outdoor Yoga,66 St-Lincoln Center,4826
+2026-07-01,Beer Garden Opening,Canal St,9913
+2026-07-01,Jazz Festival,Spring St,7865
+2026-07-05,Dance Performance,Canal St,8291
+2026-07-05,Music Festival,Chambers St,7100
+2026-07-05,Book Fair,Chambers St,10725
+2026-07-06,Book Fair,Spring St,10941
+2026-07-07,Craft Fair,50 St,2814
+2026-07-09,Fireworks Display,34 St-Penn Station,8249
+2026-07-09,Book Fair,42 St-Port Authority,7671
+2026-07-12,Fireworks Display,Times Sq-42 St,9926
+2026-07-13,Outdoor Yoga,Canal St,12810
+2026-07-13,Farmers Market,Fulton St,2225
+2026-07-14,Beer Garden Opening,96 St,7966
+2026-07-14,Rooftop Party,Herald Sq-34 St,3184
+2026-07-17,Museum Night,Fulton St,12637
+2026-07-18,Food Festival,23 St,10066
+2026-07-19,Summer Concert Series,Houston St,2971
+2026-07-20,Farmers Market,Times Sq-42 St,12397
+2026-07-21,Pride Parade,Chambers St,14127
+2026-07-23,Book Fair,34 St-Penn Station,9753
+2026-07-23,Fireworks Display,Grand Central-42 St,7382
+2026-07-27,Block Party,Christopher St,3850
+2026-07-27,Dance Performance,23 St,9268
+2026-08-02,Outdoor Yoga,Canal St,7617
+2026-08-02,Block Party,Christopher St,14583
+2026-08-08,Summer Concert Series,42 St-Port Authority,7240
+2026-08-09,Summer Concert Series,34 St-Penn Station,6206
+2026-08-10,Rooftop Party,34 St-Penn Station,4898
+2026-08-10,Block Party,34 St-Penn Station,5353
+2026-08-11,Rooftop Party,34 St-Penn Station,6826
+2026-08-11,Dance Performance,Grand Central-42 St,7191
+2026-08-11,Fireworks Display,42 St-Port Authority,13114
+2026-08-14,Food Festival,125 St,2420

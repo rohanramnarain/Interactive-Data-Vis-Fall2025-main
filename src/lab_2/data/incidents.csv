@@ -1,0 +1,601 @@
+date,station,severity,staffing_count,response_time_minutes
+2015-01-17,28 St,medium,13,9.4
+2015-01-28,59 St-Columbus Circle,high,6,15.6
+2015-02-06,Christopher St,low,15,6.9
+2015-02-20,Herald Sq-34 St,high,15,4.5
+2015-03-02,34 St-Penn Station,low,15,5.1
+2015-03-07,Spring St,low,11,8.4
+2015-03-08,Herald Sq-34 St,low,15,5.8
+2015-03-10,34 St-Penn Station,medium,15,4.6
+2015-03-11,Herald Sq-34 St,medium,15,5.2
+2015-03-13,28 St,medium,14,5.4
+2015-03-21,Christopher St,high,14,12.4
+2015-04-06,Wall St,medium,8,9
+2015-04-14,Bowling Green,low,7,19.1
+2015-04-30,59 St-Columbus Circle,medium,7,17.6
+2015-05-02,125 St,high,7,15.2
+2015-05-11,Bowling Green,low,6,13.2
+2015-05-28,86 St,high,19,4.7
+2015-06-01,Astor Pl,high,7,21.7
+2015-06-08,Canal St,high,5,13.1
+2015-06-15,23 St,low,9,12.5
+2015-06-18,Wall St,medium,10,13.4
+2015-06-30,Chambers St,low,19,3.9
+2015-07-11,23 St,low,8,8.3
+2015-07-17,Bowling Green,high,6,19.3
+2015-07-17,14 St-Union Sq,low,4,20.2
+2015-07-19,42 St-Port Authority,medium,13,11.8
+2015-07-25,72 St,low,10,6.8
+2015-07-27,96 St,low,19,4.8
+2015-07-31,28 St,high,12,11
+2015-08-10,66 St-Lincoln Center,medium,14,6.6
+2015-09-01,50 St,low,20,8.5
+2015-09-12,59 St-Columbus Circle,high,7,22.6
+2015-09-18,42 St-Port Authority,medium,13,11.7
+2015-10-02,Bowling Green,low,6,14.4
+2015-10-15,72 St,low,10,6.1
+2015-10-19,Astor Pl,medium,7,22
+2015-10-22,72 St,low,10,9.6
+2015-10-23,66 St-Lincoln Center,high,15,5.4
+2015-10-29,Herald Sq-34 St,medium,15,7.7
+2015-11-03,Fulton St,low,18,5.5
+2015-11-05,50 St,high,20,4.2
+2015-11-15,Grand Central-42 St,medium,18,7.2
+2015-11-16,23 St,high,8,15.9
+2015-11-26,Houston St,low,19,4.1
+2015-11-29,Spring St,high,10,6.5
+2015-12-03,West 4 St-Wash Sq,low,4,12.1
+2016-01-07,86 St,high,19,6
+2016-01-09,96 St,high,19,6.3
+2016-01-13,86 St,low,20,4
+2016-01-24,Houston St,medium,19,5.1
+2016-02-03,Houston St,low,19,4.5
+2016-02-16,66 St-Lincoln Center,medium,15,7
+2016-02-17,Grand Central-42 St,low,18,7.7
+2016-03-08,Houston St,high,19,2.7
+2016-03-16,Canal St,low,4,18.9
+2016-03-31,50 St,medium,20,5.3
+2016-03-31,28 St,high,13,9.8
+2016-04-15,Christopher St,low,15,6.8
+2016-04-15,86 St,low,19,3.3
+2016-04-19,59 St-Columbus Circle,high,6,25.4
+2016-04-29,Chambers St,high,19,8.1
+2016-05-03,96 St,high,19,4.5
+2016-05-08,59 St-Columbus Circle,medium,5,19.8
+2016-05-16,59 St-Columbus Circle,high,6,19.2
+2016-05-16,125 St,medium,7,21.4
+2016-05-23,86 St,high,18,2.6
+2016-06-04,125 St,high,7,19.6
+2016-06-06,Fulton St,high,18,3.2
+2016-06-08,Chambers St,medium,18,7
+2016-06-09,Astor Pl,low,7,18.4
+2016-06-09,86 St,medium,19,6.1
+2016-06-12,Spring St,high,11,9.2
+2016-06-20,23 St,high,8,12.1
+2016-07-07,96 St,medium,20,5.5
+2016-07-10,34 St-Penn Station,low,14,7.9
+2016-07-14,Chambers St,high,17,7.5
+2016-07-14,72 St,high,10,14.3
+2016-07-17,Bowling Green,high,6,20.9
+2016-07-23,66 St-Lincoln Center,medium,15,7.9
+2016-08-12,Times Sq-42 St,low,18,3.2
+2016-08-13,14 St-Union Sq,low,4,24.1
+2016-08-23,34 St-Penn Station,high,15,2.8
+2016-08-24,Wall St,low,9,14.8
+2016-08-28,23 St,low,8,9.6
+2016-09-04,Wall St,low,9,8
+2016-09-11,23 St,high,9,10.7
+2016-09-13,Houston St,high,19,5
+2016-09-15,23 St,low,8,10.9
+2016-09-15,Canal St,low,4,16.5
+2016-09-30,14 St-Union Sq,medium,4,17.5
+2016-10-09,West 4 St-Wash Sq,high,5,18.1
+2016-10-17,Fulton St,low,18,4
+2016-10-24,Christopher St,low,16,6
+2016-10-24,Christopher St,high,15,2
+2016-10-24,West 4 St-Wash Sq,medium,4,17.7
+2016-11-08,72 St,high,10,14
+2016-11-30,28 St,medium,13,14.7
+2016-12-18,Astor Pl,low,7,14.1
+2016-12-21,28 St,high,13,12.7
+2016-12-22,Grand Central-42 St,medium,18,6.2
+2016-12-29,42 St-Port Authority,high,12,7.5
+2016-12-29,34 St-Penn Station,low,15,7.8
+2016-12-31,59 St-Columbus Circle,medium,7,19.5
+2017-01-04,96 St,medium,18,6.4
+2017-01-11,Spring St,high,11,9.6
+2017-01-25,125 St,low,7,24.7
+2017-01-26,34 St-Penn Station,medium,16,2.7
+2017-01-30,Chambers St,medium,17,5.9
+2017-01-30,96 St,low,18,7.4
+2017-02-12,125 St,low,8,14.5
+2017-02-13,West 4 St-Wash Sq,medium,4,18.6
+2017-02-18,Wall St,high,9,10.8
+2017-02-19,Times Sq-42 St,high,18,6.6
+2017-02-23,Herald Sq-34 St,medium,15,6.7
+2017-03-15,42 St-Port Authority,low,13,9.7
+2017-03-26,72 St,low,10,11.1
+2017-03-29,23 St,medium,7,14.6
+2017-04-11,Grand Central-42 St,high,17,3.9
+2017-04-15,Wall St,low,9,11.3
+2017-04-17,Times Sq-42 St,low,18,2
+2017-04-25,Christopher St,medium,14,10.3
+2017-04-27,Wall St,high,8,11.5
+2017-04-27,14 St-Union Sq,medium,4,13.4
+2017-05-13,Herald Sq-34 St,medium,15,6
+2017-05-31,96 St,high,19,7.5
+2017-06-18,66 St-Lincoln Center,low,16,5.9
+2017-06-21,23 St,medium,8,4.8
+2017-06-23,42 St-Port Authority,high,13,11.7
+2017-07-02,28 St,medium,13,10.8
+2017-07-03,Times Sq-42 St,high,18,7.1
+2017-07-08,Times Sq-42 St,high,19,5.2
+2017-07-11,Times Sq-42 St,high,17,6.1
+2017-07-22,Houston St,low,19,5.8
+2017-07-24,Canal St,low,5,24.2
+2017-07-25,Times Sq-42 St,high,18,3.2
+2017-08-20,34 St-Penn Station,medium,15,6.2
+2017-08-21,72 St,medium,10,7
+2017-08-29,Herald Sq-34 St,high,15,4.1
+2017-08-29,50 St,medium,20,5
+2017-08-29,Times Sq-42 St,high,18,7
+2017-09-08,59 St-Columbus Circle,high,6,17.8
+2017-09-12,72 St,low,10,4.9
+2017-09-20,Christopher St,low,16,7.2
+2017-09-21,72 St,high,10,13.1
+2017-09-28,59 St-Columbus Circle,high,6,17
+2017-10-12,96 St,low,18,7.2
+2017-10-14,Fulton St,medium,18,2
+2017-11-02,42 St-Port Authority,high,13,7.7
+2017-11-02,72 St,high,9,8.3
+2017-11-09,28 St,low,13,9.8
+2017-11-22,72 St,medium,10,13.6
+2017-11-23,14 St-Union Sq,low,4,14.8
+2017-11-26,West 4 St-Wash Sq,medium,5,17.9
+2017-12-02,72 St,high,10,12.7
+2017-12-10,Bowling Green,low,6,19.5
+2017-12-20,34 St-Penn Station,high,15,4.8
+2018-01-07,Wall St,low,9,11.7
+2018-01-08,96 St,low,19,7.4
+2018-01-09,Chambers St,high,18,5.6
+2018-01-15,96 St,high,19,3
+2018-01-17,Astor Pl,low,7,20.8
+2018-01-18,86 St,medium,19,7.7
+2018-01-18,125 St,low,6,22.9
+2018-01-19,West 4 St-Wash Sq,high,5,24.1
+2018-02-03,23 St,low,8,11
+2018-02-09,Grand Central-42 St,medium,18,2.2
+2018-02-11,66 St-Lincoln Center,low,15,5.3
+2018-02-13,Houston St,medium,20,5.7
+2018-02-16,Canal St,low,4,12.2
+2018-02-17,66 St-Lincoln Center,high,15,2.3
+2018-02-23,66 St-Lincoln Center,medium,15,9.1
+2018-03-05,Wall St,high,9,5.5
+2018-03-09,50 St,high,19,7.8
+2018-03-15,Wall St,low,9,8.4
+2018-03-27,72 St,low,10,8.4
+2018-04-13,50 St,low,20,4.1
+2018-04-26,86 St,low,19,8.7
+2018-04-27,Spring St,low,11,9.5
+2018-05-01,42 St-Port Authority,high,13,13
+2018-05-06,96 St,medium,19,5.4
+2018-05-12,50 St,high,20,4.4
+2018-05-19,Times Sq-42 St,low,18,5.7
+2018-05-22,Wall St,high,9,14
+2018-05-29,28 St,low,13,11.3
+2018-06-02,42 St-Port Authority,high,13,13.3
+2018-06-10,66 St-Lincoln Center,high,15,7.7
+2018-06-13,Wall St,medium,9,14.6
+2018-06-16,Times Sq-42 St,low,18,5.3
+2018-06-22,Grand Central-42 St,high,18,6.1
+2018-06-23,42 St-Port Authority,medium,12,7.8
+2018-06-26,West 4 St-Wash Sq,high,4,22.2
+2018-07-03,96 St,medium,20,8.3
+2018-07-11,50 St,medium,21,6.4
+2018-07-18,Spring St,medium,11,5.4
+2018-08-17,59 St-Columbus Circle,medium,5,15.8
+2018-08-18,Times Sq-42 St,high,17,5.3
+2018-08-20,Christopher St,medium,15,4.4
+2018-08-27,Wall St,medium,9,12.8
+2018-09-07,42 St-Port Authority,low,13,13.8
+2018-09-18,59 St-Columbus Circle,high,6,11.1
+2018-09-19,125 St,high,7,21.5
+2018-09-22,Chambers St,high,18,7.1
+2018-10-15,Times Sq-42 St,low,18,6.6
+2018-11-02,Christopher St,low,15,8.5
+2018-11-04,59 St-Columbus Circle,medium,6,14.8
+2018-11-04,86 St,high,19,5.1
+2018-11-11,West 4 St-Wash Sq,medium,5,22
+2018-11-19,96 St,medium,19,7.4
+2018-11-20,23 St,high,8,6.8
+2018-12-10,Spring St,high,11,4.7
+2018-12-10,59 St-Columbus Circle,low,6,21
+2018-12-19,28 St,low,13,14.7
+2018-12-21,Fulton St,medium,19,3.8
+2018-12-23,86 St,high,19,4.1
+2018-12-26,86 St,high,19,6.6
+2019-01-06,23 St,high,8,11.9
+2019-01-11,96 St,medium,20,5.5
+2019-01-29,34 St-Penn Station,low,15,4.3
+2019-01-31,59 St-Columbus Circle,low,6,17.6
+2019-02-04,125 St,medium,7,25.1
+2019-02-04,Chambers St,high,18,5.7
+2019-02-05,West 4 St-Wash Sq,medium,4,24.1
+2019-02-06,28 St,high,13,8.8
+2019-02-20,West 4 St-Wash Sq,medium,3,14.9
+2019-02-22,Houston St,high,19,4.7
+2019-02-27,96 St,low,19,4.5
+2019-03-14,West 4 St-Wash Sq,high,5,24
+2019-03-23,34 St-Penn Station,low,15,4.5
+2019-04-12,Houston St,low,19,8.4
+2019-04-19,34 St-Penn Station,low,15,5.3
+2019-04-29,72 St,medium,10,9.2
+2019-05-20,Grand Central-42 St,medium,18,3.1
+2019-05-24,Bowling Green,high,6,13.1
+2019-06-02,72 St,low,10,12.9
+2019-06-06,Wall St,high,8,5.9
+2019-06-14,Herald Sq-34 St,low,16,8
+2019-07-05,Chambers St,medium,18,7.1
+2019-07-07,28 St,high,14,8.4
+2019-07-13,Bowling Green,medium,7,13.7
+2019-07-14,14 St-Union Sq,medium,5,12.7
+2019-07-14,86 St,high,18,4
+2019-07-22,West 4 St-Wash Sq,low,4,17.8
+2019-08-01,Grand Central-42 St,high,18,6.5
+2019-08-07,Chambers St,medium,18,7.5
+2019-08-08,23 St,low,8,6.6
+2019-08-08,42 St-Port Authority,high,13,14.7
+2019-08-22,Times Sq-42 St,medium,18,5.8
+2019-08-29,66 St-Lincoln Center,low,16,3.8
+2019-09-01,23 St,medium,8,11.7
+2019-09-14,34 St-Penn Station,low,14,14.2
+2019-09-20,14 St-Union Sq,high,3,17
+2019-10-07,125 St,medium,6,17.3
+2019-10-13,42 St-Port Authority,high,13,12.5
+2019-10-16,96 St,high,18,7.6
+2019-11-14,Wall St,low,8,8.3
+2019-11-21,14 St-Union Sq,medium,4,14
+2019-11-24,Chambers St,high,18,4.4
+2019-12-03,Bowling Green,low,7,23.6
+2019-12-05,Canal St,low,4,21.2
+2019-12-08,Canal St,low,4,19
+2019-12-11,Herald Sq-34 St,high,15,3
+2019-12-13,Times Sq-42 St,medium,19,5.3
+2020-01-01,86 St,medium,19,6.6
+2020-01-07,14 St-Union Sq,high,3,10.5
+2020-01-18,66 St-Lincoln Center,high,15,3
+2020-01-19,Fulton St,low,18,6.8
+2020-01-24,Spring St,medium,11,12.1
+2020-01-28,Houston St,low,19,6.5
+2020-01-29,Houston St,low,20,4.3
+2020-02-01,Astor Pl,medium,8,10.3
+2020-02-03,34 St-Penn Station,medium,15,4.8
+2020-02-05,Christopher St,medium,15,7.3
+2020-02-11,96 St,medium,19,6.2
+2020-02-15,West 4 St-Wash Sq,high,3,19.3
+2020-02-17,Times Sq-42 St,medium,18,4
+2020-02-20,34 St-Penn Station,medium,15,6.5
+2020-02-20,West 4 St-Wash Sq,low,5,13.7
+2020-02-21,34 St-Penn Station,low,15,2.4
+2020-03-09,West 4 St-Wash Sq,low,4,13.6
+2020-03-10,Wall St,medium,8,5.2
+2020-03-15,28 St,medium,12,16
+2020-03-17,96 St,high,19,9.1
+2020-03-22,Canal St,low,4,22.4
+2020-03-27,28 St,low,12,13.7
+2020-04-12,50 St,low,19,2.6
+2020-04-20,Herald Sq-34 St,low,15,4
+2020-04-20,42 St-Port Authority,high,12,11.9
+2020-04-21,23 St,low,9,12.6
+2020-04-22,42 St-Port Authority,medium,13,12.7
+2020-04-23,59 St-Columbus Circle,medium,6,19.3
+2020-04-29,14 St-Union Sq,low,4,17.3
+2020-04-29,23 St,low,9,9.9
+2020-05-01,96 St,low,20,6.9
+2020-06-14,Wall St,high,9,13.6
+2020-06-17,Herald Sq-34 St,low,14,6.3
+2020-06-17,72 St,medium,10,11.9
+2020-06-25,86 St,high,18,4.9
+2020-06-25,28 St,medium,13,13.3
+2020-06-27,59 St-Columbus Circle,high,6,18.9
+2020-07-02,Canal St,medium,4,18.5
+2020-07-02,Spring St,medium,11,11.8
+2020-07-03,Canal St,low,4,24.1
+2020-07-15,Grand Central-42 St,low,18,5
+2020-07-19,Times Sq-42 St,high,19,8.2
+2020-07-29,West 4 St-Wash Sq,high,4,22.6
+2020-08-08,125 St,low,7,22.4
+2020-08-11,96 St,high,19,6
+2020-08-23,West 4 St-Wash Sq,medium,3,20.9
+2020-08-23,Times Sq-42 St,medium,18,4.6
+2020-09-01,Grand Central-42 St,medium,18,8.2
+2020-09-02,86 St,low,19,8.2
+2020-09-02,Canal St,high,3,22.8
+2020-09-02,Chambers St,medium,17,7
+2020-09-06,Bowling Green,low,5,21.4
+2020-09-06,Canal St,medium,4,15.8
+2020-09-08,Astor Pl,high,6,13.7
+2020-09-09,66 St-Lincoln Center,low,15,2.5
+2020-09-10,42 St-Port Authority,high,13,10.8
+2020-09-15,125 St,low,6,20
+2020-10-03,28 St,high,14,13
+2020-10-06,Herald Sq-34 St,high,15,2.9
+2020-10-10,Christopher St,low,14,6.5
+2020-10-18,Wall St,high,9,5.2
+2020-10-31,66 St-Lincoln Center,high,15,6.2
+2020-11-03,86 St,high,19,6
+2020-11-19,125 St,low,8,15.2
+2020-11-26,125 St,low,7,26
+2020-12-06,23 St,high,8,7.4
+2020-12-06,Spring St,medium,11,13.1
+2020-12-10,Astor Pl,low,8,8.9
+2021-01-05,Wall St,medium,9,8.5
+2021-01-10,Wall St,high,9,8.2
+2021-01-12,Houston St,high,19,5.1
+2021-01-17,Astor Pl,low,8,7.6
+2021-01-30,Houston St,low,19,2.8
+2021-02-03,Astor Pl,low,7,17.5
+2021-02-06,34 St-Penn Station,low,15,3.1
+2021-02-10,125 St,high,6,14.2
+2021-02-18,Wall St,low,9,14.1
+2021-02-18,96 St,medium,19,6.3
+2021-02-19,50 St,medium,20,8
+2021-02-20,Christopher St,medium,15,6.3
+2021-03-01,72 St,high,11,13.3
+2021-03-08,Times Sq-42 St,medium,19,8.4
+2021-03-12,Wall St,high,9,10.1
+2021-03-15,West 4 St-Wash Sq,high,4,11.8
+2021-03-21,34 St-Penn Station,medium,15,4.1
+2021-03-23,Christopher St,medium,14,9.8
+2021-03-25,Christopher St,high,15,2.6
+2021-03-26,72 St,medium,9,14
+2021-03-28,Wall St,high,9,7.2
+2021-04-11,Bowling Green,medium,6,20.8
+2021-04-11,34 St-Penn Station,medium,15,2.7
+2021-04-14,86 St,high,19,4.7
+2021-04-22,Wall St,low,9,10.5
+2021-04-25,Wall St,medium,9,5.8
+2021-04-27,50 St,low,20,8.4
+2021-04-28,Chambers St,high,19,4
+2021-04-30,Christopher St,high,15,5.8
+2021-05-05,72 St,high,11,10.9
+2021-05-14,Houston St,low,20,3.6
+2021-05-24,66 St-Lincoln Center,low,15,5.6
+2021-05-28,42 St-Port Authority,medium,13,8.7
+2021-06-05,50 St,low,21,5.3
+2021-06-06,Bowling Green,high,5,20
+2021-06-08,42 St-Port Authority,medium,13,12.2
+2021-06-09,Bowling Green,low,6,11.8
+2021-06-18,96 St,high,19,5.9
+2021-06-19,42 St-Port Authority,medium,13,12.7
+2021-06-24,34 St-Penn Station,high,15,3.7
+2021-07-03,Fulton St,low,19,4.1
+2021-07-07,23 St,medium,9,7.3
+2021-07-20,86 St,high,19,6.8
+2021-07-27,Astor Pl,medium,8,15.2
+2021-07-30,72 St,high,9,14
+2021-08-02,Canal St,medium,4,15.1
+2021-08-14,42 St-Port Authority,high,13,14.2
+2021-08-17,Christopher St,high,15,5.8
+2021-08-17,14 St-Union Sq,medium,5,18.3
+2021-08-24,West 4 St-Wash Sq,medium,4,18.6
+2021-09-07,50 St,low,20,7.6
+2021-09-11,34 St-Penn Station,high,15,3.8
+2021-09-24,59 St-Columbus Circle,medium,6,25
+2021-09-30,50 St,medium,19,6.3
+2021-10-02,66 St-Lincoln Center,high,16,4.1
+2021-10-22,59 St-Columbus Circle,low,6,14.4
+2021-10-24,Fulton St,low,18,8.1
+2021-10-30,Fulton St,medium,17,2.2
+2021-11-06,Canal St,low,4,20.6
+2021-11-07,28 St,low,14,9.8
+2021-11-16,Christopher St,high,15,3.7
+2021-11-27,Times Sq-42 St,medium,18,2
+2021-12-02,96 St,medium,19,8
+2021-12-02,23 St,high,8,14.1
+2021-12-05,23 St,low,8,14.3
+2021-12-11,Grand Central-42 St,high,19,6.6
+2021-12-11,Wall St,medium,10,8.7
+2021-12-13,Bowling Green,medium,6,19.1
+2021-12-21,42 St-Port Authority,medium,13,13.2
+2021-12-31,14 St-Union Sq,low,4,20.7
+2022-01-04,72 St,high,11,6.2
+2022-01-09,Times Sq-42 St,high,19,4.6
+2022-01-12,Spring St,low,12,13.3
+2022-01-21,Spring St,medium,10,10.1
+2022-01-26,Chambers St,high,17,6
+2022-01-31,Christopher St,low,15,5.9
+2022-02-11,86 St,medium,18,4
+2022-02-18,86 St,high,19,3.9
+2022-02-21,23 St,low,7,12.8
+2022-02-21,Wall St,high,9,14.9
+2022-03-05,42 St-Port Authority,low,13,11.2
+2022-03-29,Grand Central-42 St,low,19,2.2
+2022-04-04,125 St,medium,7,16.1
+2022-04-21,Times Sq-42 St,medium,18,6.1
+2022-04-25,Wall St,high,8,13.6
+2022-04-26,Grand Central-42 St,high,17,6.7
+2022-05-14,14 St-Union Sq,high,3,22.8
+2022-05-18,50 St,low,20,6
+2022-05-20,Fulton St,medium,18,5
+2022-05-21,Astor Pl,high,7,14.3
+2022-05-23,Wall St,low,9,7.3
+2022-05-27,Times Sq-42 St,low,18,5
+2022-05-29,59 St-Columbus Circle,low,5,23.4
+2022-06-18,72 St,low,10,8
+2022-06-21,Astor Pl,high,6,12
+2022-06-28,50 St,medium,20,5.4
+2022-07-21,59 St-Columbus Circle,low,6,19.5
+2022-07-22,14 St-Union Sq,low,4,21.8
+2022-07-28,86 St,low,19,2
+2022-08-02,Spring St,medium,11,4.4
+2022-08-08,Fulton St,low,18,8.9
+2022-08-09,Spring St,low,10,5.8
+2022-08-16,96 St,high,19,2
+2022-08-29,Houston St,high,18,5.5
+2022-08-31,23 St,low,9,12.7
+2022-09-04,West 4 St-Wash Sq,low,4,22.8
+2022-10-06,Herald Sq-34 St,low,15,4.8
+2022-10-06,34 St-Penn Station,high,15,4.5
+2022-10-14,72 St,medium,10,10.5
+2022-10-16,86 St,high,19,5.1
+2022-10-22,Wall St,medium,9,9.7
+2022-10-30,Canal St,low,4,24.5
+2022-11-05,Fulton St,high,17,4.8
+2022-11-14,Fulton St,high,18,2.6
+2022-11-14,Herald Sq-34 St,medium,15,5.5
+2022-11-16,Bowling Green,high,5,24.4
+2022-11-16,Wall St,low,9,14.7
+2022-12-01,Bowling Green,medium,7,19.2
+2022-12-04,28 St,low,13,13.6
+2022-12-07,72 St,high,10,10.5
+2022-12-11,West 4 St-Wash Sq,low,4,15.8
+2022-12-19,West 4 St-Wash Sq,high,4,17.8
+2023-01-07,Canal St,low,4,18.1
+2023-01-11,125 St,low,8,13.4
+2023-01-14,Spring St,low,11,7.9
+2023-01-17,Astor Pl,low,7,15.9
+2023-02-10,Houston St,low,19,5.2
+2023-02-19,Fulton St,medium,19,4.9
+2023-02-20,96 St,high,20,8.4
+2023-02-21,Fulton St,low,18,5.8
+2023-02-25,Wall St,high,9,12
+2023-03-05,Fulton St,high,17,5.3
+2023-03-13,Astor Pl,low,7,17.7
+2023-04-01,50 St,low,20,5.8
+2023-04-02,Wall St,low,8,12.5
+2023-04-03,Wall St,low,9,9.7
+2023-04-05,Christopher St,low,16,5.1
+2023-04-13,96 St,medium,19,5.3
+2023-04-25,42 St-Port Authority,medium,13,12
+2023-04-29,Bowling Green,medium,6,19.6
+2023-05-01,28 St,high,13,6.4
+2023-05-02,23 St,high,8,12.4
+2023-05-23,Houston St,high,19,6.3
+2023-05-25,Chambers St,high,17,6.8
+2023-05-30,96 St,low,19,4.8
+2023-06-13,West 4 St-Wash Sq,low,5,13.6
+2023-06-27,42 St-Port Authority,high,13,13.6
+2023-07-03,Wall St,high,8,8.2
+2023-07-03,50 St,high,19,2.1
+2023-07-08,50 St,medium,20,2.5
+2023-07-27,125 St,low,6,16.1
+2023-08-11,Times Sq-42 St,low,18,2.8
+2023-08-14,66 St-Lincoln Center,low,15,2
+2023-08-15,96 St,medium,19,5.3
+2023-09-03,66 St-Lincoln Center,medium,14,12.2
+2023-09-06,Grand Central-42 St,low,19,4.1
+2023-09-06,42 St-Port Authority,medium,13,7.6
+2023-09-14,34 St-Penn Station,medium,15,4.2
+2023-09-15,Canal St,low,4,13.4
+2023-09-18,Chambers St,high,18,5.9
+2023-09-28,23 St,medium,9,9.9
+2023-10-16,Astor Pl,high,7,26.4
+2023-10-17,Fulton St,medium,18,6.1
+2023-10-18,86 St,medium,20,5.4
+2023-10-19,72 St,medium,11,11.6
+2023-10-21,West 4 St-Wash Sq,medium,5,22.2
+2023-10-27,Spring St,medium,11,11.6
+2023-11-07,Houston St,high,19,2.1
+2023-11-14,Fulton St,high,18,5.6
+2023-11-27,Grand Central-42 St,low,18,3.6
+2023-12-13,14 St-Union Sq,medium,4,17.1
+2023-12-14,125 St,medium,7,18.3
+2023-12-18,34 St-Penn Station,low,15,5.4
+2023-12-20,Chambers St,high,18,7.5
+2023-12-21,Spring St,low,12,10.7
+2023-12-22,Fulton St,medium,17,4.4
+2023-12-23,72 St,high,10,9.6
+2023-12-31,86 St,medium,19,2
+2024-01-18,34 St-Penn Station,medium,15,4.2
+2024-01-25,42 St-Port Authority,high,14,13.4
+2024-01-29,Herald Sq-34 St,high,14,10.6
+2024-01-30,125 St,low,8,9
+2024-01-31,86 St,low,19,6.3
+2024-02-05,96 St,high,18,5.3
+2024-02-22,96 St,high,20,5.4
+2024-02-22,Christopher St,high,14,8.5
+2024-02-26,23 St,low,7,18.1
+2024-03-02,Grand Central-42 St,low,18,3.3
+2024-03-19,86 St,low,19,3.1
+2024-03-19,Christopher St,medium,14,14.3
+2024-04-11,86 St,medium,19,7.3
+2024-04-26,72 St,high,10,11.8
+2024-04-30,14 St-Union Sq,high,4,23.5
+2024-05-01,42 St-Port Authority,low,12,7.8
+2024-05-02,Fulton St,low,19,5.7
+2024-05-07,50 St,low,21,4.8
+2024-05-13,Grand Central-42 St,medium,18,9
+2024-05-15,Christopher St,medium,15,3.3
+2024-05-23,Canal St,low,3,14.4
+2024-05-29,Herald Sq-34 St,high,16,2.8
+2024-05-31,Chambers St,medium,18,8.7
+2024-06-13,28 St,low,13,13.5
+2024-06-14,Bowling Green,low,5,15.4
+2024-07-01,Canal St,high,4,21.3
+2024-07-07,86 St,low,20,8.3
+2024-07-12,Houston St,low,19,8.7
+2024-07-18,Bowling Green,medium,7,24.8
+2024-07-22,Astor Pl,high,6,24.6
+2024-07-24,Fulton St,low,18,6.8
+2024-07-27,59 St-Columbus Circle,medium,6,16.8
+2024-08-06,72 St,low,10,8.2
+2024-08-15,Herald Sq-34 St,medium,15,5.7
+2024-08-18,66 St-Lincoln Center,low,15,3.2
+2024-08-29,Times Sq-42 St,medium,18,5.7
+2024-09-09,59 St-Columbus Circle,medium,5,23.1
+2024-09-27,Bowling Green,high,6,16.7
+2024-09-28,96 St,medium,19,7.5
+2024-10-05,34 St-Penn Station,high,15,5.9
+2024-10-07,West 4 St-Wash Sq,high,4,20.2
+2024-10-11,72 St,medium,9,12.5
+2024-10-16,Chambers St,medium,17,5.3
+2024-10-22,125 St,medium,7,22.5
+2024-10-25,Herald Sq-34 St,low,15,6
+2024-10-29,Canal St,high,4,11.6
+2024-11-06,Herald Sq-34 St,medium,15,7.1
+2024-11-11,Spring St,medium,12,12.2
+2024-11-15,72 St,high,10,11.9
+2024-11-16,28 St,low,14,13
+2024-11-19,42 St-Port Authority,high,13,13.5
+2024-11-20,Herald Sq-34 St,low,15,5.8
+2024-11-20,Times Sq-42 St,low,18,5.3
+2024-11-25,125 St,high,8,11
+2024-11-30,59 St-Columbus Circle,low,6,22.4
+2024-12-03,Chambers St,medium,17,2
+2024-12-04,Wall St,high,9,9.6
+2024-12-09,66 St-Lincoln Center,high,15,5.4
+2024-12-18,Houston St,high,19,4.1
+2024-12-22,66 St-Lincoln Center,high,15,6
+2024-12-30,42 St-Port Authority,high,14,7.6
+2025-01-24,86 St,high,19,4.2
+2025-01-26,50 St,low,20,8
+2025-01-30,96 St,medium,19,2.1
+2025-02-03,Astor Pl,low,7,20.6
+2025-02-03,14 St-Union Sq,high,4,15.6
+2025-02-06,66 St-Lincoln Center,medium,15,8
+2025-02-16,Grand Central-42 St,high,18,5.3
+2025-02-20,Astor Pl,high,6,15.6
+2025-02-24,Astor Pl,medium,7,18.8
+2025-03-22,34 St-Penn Station,low,14,9.4
+2025-03-24,Houston St,high,19,6.2
+2025-03-25,Canal St,high,4,16.3
+2025-05-05,72 St,medium,10,8.1
+2025-05-12,West 4 St-Wash Sq,low,4,18
+2025-05-18,West 4 St-Wash Sq,medium,3,22.6
+2025-05-21,Chambers St,high,18,7
+2025-05-29,Wall St,medium,9,13
+2025-05-30,Christopher St,high,15,5.4
+2025-06-01,Grand Central-42 St,high,18,3.5
+2025-06-14,Times Sq-42 St,low,19,2
+2025-06-20,West 4 St-Wash Sq,low,4,13.9
+2025-07-13,Houston St,low,18,4.4
+2025-07-15,Fulton St,high,17,4.7
+2025-07-17,West 4 St-Wash Sq,low,4,21.7
+2025-07-21,Chambers St,high,18,3.9
+2025-07-22,125 St,high,7,21.4
+2025-07-22,Canal St,medium,4,20.9
+2025-07-24,23 St,low,8,11.3
+2025-07-24,34 St-Penn Station,high,15,4.1
+2025-07-24,59 St-Columbus Circle,low,6,18.5
+2025-07-27,28 St,low,13,11.1
