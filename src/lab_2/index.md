@@ -1,7 +1,6 @@
 
 ---
-title: "Lab 2: Subway Staffing — Dashboard"
-toc: true
+Lab 2: Subway Staffing — Dashboard - Rohan Ramnarain
 ---
 
 This page answers the lab questions using Observable Plot and the four data files in `./data/`.
@@ -122,20 +121,17 @@ Plot.plot({
   y: { label: "↑ Total ridership (entrances + exits)", grid: true },
   marks: [
     Plot.lineY(ridershipDaily, { x: "date", y: "total" }),
-    Plot.dot(topEventDays, { x: "date", y: "ridership", r: 5 }),
-    Plot.tip(topEventDays, {
-      x: "date",
-      y: "ridership",
-      title: d => `${d.date.toISOString().slice(0,10)}\nAttendance: ${fmt.format(d.attendance)}\nRidership: ${fmt.format(d.ridership || 0)}`
-    }),
+    Plot.dot(topEventDays, { x: "date", y: "ridership", r: 5, tip: true, title: d => `${d.date.toISOString().slice(0,10)}\nAttendance: ${fmt.format(d.attendance)}\nRidership: ${fmt.format(d.ridership || 0)}` }),
     Plot.ruleX([fareChange], { stroke: "currentColor" }),
     Plot.text([fareChange], {
-      x: d => d,
-      y: Math.max(...ridershipDaily.map(r => r.total)) * 0.95,
-      dy: -6,
-      text: () => "Fare increase → $3.00 (Jul 15)",
-      anchor: "left"
-    })
+  x: d => d,
+  y: Math.max(...ridershipDaily.map(r => r.total)) * 0.95,
+  dy: -6,
+  dx: 77, // ← nudge right a few pixels
+  text: () => "Fare increase → $3.00 (Jul 15)",
+  anchor: "left"
+})
+
   ]
 })
 ```
@@ -174,8 +170,23 @@ Plot.plot({
   x: { label: "Avg response time (min)", grid: true },
   y: { label: null, domain: avgByStation.map(d => d.station) },
   marks: [
-    Plot.barX(avgByStation, { x: "avg", y: "station" }),
-    Plot.ruleX([overallAvg], { stroke: "currentColor", strokeDasharray: "4 4" }),
+    // Bars + hover tooltip
+    Plot.barX(avgByStation, {
+      x: "avg",
+      y: "station",
+      tip: true,
+      title: d => `${d.station}\nAvg: ${d.avg.toFixed(1)} min`
+    }),
+
+    // Mean line + hover tooltip (optional)
+    Plot.ruleX([overallAvg], {
+      stroke: "currentColor",
+      strokeDasharray: "4 4",
+      tip: true,
+      title: () => `Overall mean: ${overallAvg.toFixed(1)} min`
+    }),
+
+    // Static label for the mean (keep or remove as you like)
     Plot.text([overallAvg], {
       x: d => d, y: 0.5,
       text: () => `Overall mean: ${overallAvg.toFixed(1)} min`,
@@ -183,6 +194,7 @@ Plot.plot({
     })
   ]
 })
+
 ```
 
 ```js
@@ -265,12 +277,7 @@ Plot.plot({
   x: { label: "Expected attendees per staffer (Summer 2026)", grid: true },
   y: { label: null, domain: demandRenderable.slice(0,12).map(d => d.station) },
   marks: [
-    Plot.barX(demandRenderable.slice(0,12), { x: "perStaff", y: "station" }),
-    Plot.tip(demandRenderable.slice(0,12), {
-      x: "perStaff",
-      y: "station",
-      title: d => `${d.station}\nExpected: ${fmt.format(Math.round(d.expected))}\nStaff: ${d.staff}\nPer staff: ${fmt.format(Math.round(d.perStaff))}`
-    })
+    Plot.barX(demandRenderable.slice(0,12), { x: "perStaff", y: "station", tip: true, title: d => `${d.station}\nExpected: ${fmt.format(Math.round(d.expected))}\nStaff: ${d.staff}\nPer staff: ${fmt.format(Math.round(d.perStaff))}` })
   ]
 })
 ```
@@ -285,7 +292,7 @@ ${top3.map((d,i) => `${i+1}) <strong>${d.station}</strong> — ${fmt.format(Math
 
 ## 4) **Bonus:** One-Station Priority Recommendation
 
-We build a simple composite score that blends **2026 demand pressure**, **historical response time**, and **2025 event-driven uplifts** at each station.
+I built a simple composite score that blends **2026 demand pressure**, **historical response time**, and **2025 event-driven uplifts** at each station.
 
 - **Demand pressure (50%)**: expected 2026 attendees per staffer (from above).
 - **Response time (30%)**: average historical response time at the station (higher = worse).
@@ -368,12 +375,7 @@ Plot.plot({
   x: { label: "Composite priority score (0–1) →" },
   y: { label: null, domain: scoreRows.slice(0,10).map(d => d.station) },
   marks: [
-    Plot.barX(scoreRows.slice(0,10), { x: "score", y: "station" }),
-    Plot.tip(scoreRows.slice(0,10), {
-      x: "score",
-      y: "station",
-      title: d => `${d.station}\nScore: ${d.score.toFixed(2)}\nDemand/staff: ${fmt.format(Math.round(d.demand))}\nAvg RT: ${d.rt.toFixed(1)} min\n2025 uplift: ${fmt.format(Math.round(d.lift))}`
-    })
+    Plot.barX(scoreRows.slice(0,10), { x: "score", y: "station", tip: true, title: d => `${d.station}\nScore: ${d.score.toFixed(2)}\nDemand/staff: ${fmt.format(Math.round(d.demand))}\nAvg RT: ${d.rt.toFixed(1)} min\n2025 uplift: ${fmt.format(Math.round(d.lift))}` })
   ]
 })
 ```
