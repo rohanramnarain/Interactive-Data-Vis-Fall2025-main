@@ -25,12 +25,20 @@ export default {
     },
       {
       name: "Lab 2: Subway Staffing",
-      open: true,
+      open: false,
       pages: [
         { name: "Instructions", path: "/lab_2/readme" },
         { name: "Dashboard", path: "/lab_2/index" },
       ],
     },
+    {
+      name: "Lab 3: Mayoral Mystery",
+      open: true,
+      pages: [
+        { name: "Instructions", path: "/lab_3/readme" },
+        { name: "Dashboard", path: "/lab_3/index" },
+      ],
+    }
   ],
 
   // Content to add to the head of the page, e.g. for a favicon:

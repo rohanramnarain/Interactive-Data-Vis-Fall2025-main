@@ -1,0 +1,101 @@
+respondent_id,boro_cd,age,heard_of_candidate,affordable_housing_alignment,public_transit_alignment,childcare_support_alignment,small_business_tax_alignment,police_reform_alignment,voted,voted_for,open_response
+1,209,68,Yes,4,4,4,4,1,No,,
+2,304,70,Yes,4,5,5,4,1,No,,
+3,316,64,Yes,4,5,5,4,2,No,,
+4,206,57,Yes,4,5,5,3,2,Yes,Opponent,"I really liked him and what he stood for, but I couldn't get past his position on police reform. It felt too extreme."
+5,109,28,No,5,4,5,3,1,Yes,Opponent,
+6,202,70,No,4,4,5,4,1,Yes,Candidate,
+7,201,27,Yes,4,5,4,4,1,Yes,Candidate,Small businesses need support and he understands that. Not like the other guy.
+8,313,37,No,4,4,5,3,1,No,,
+9,110,61,Yes,4,4,5,4,2,Yes,Candidate,"Everything else about his platform was great, but his police reform stance was a dealbreaker for me."
+10,204,70,Yes,4,4,4,3,1,No,,
+11,112,44,Yes,5,4,5,4,1,No,,
+12,203,32,No,4,4,5,4,1,No,,
+13,315,49,Yes,5,5,5,4,2,No,,
+14,210,68,Yes,5,4,4,3,2,No,,
+15,201,63,Yes,4,4,5,3,1,Yes,Candidate,"I wanted to support him, I really did, but that police reform policy just didn't sit right with me."
+16,109,37,Yes,5,5,5,3,2,Yes,Candidate,
+17,110,68,Yes,5,5,4,3,1,No,,
+18,303,27,Yes,4,5,5,4,2,Yes,Candidate,
+19,212,57,Yes,5,4,5,4,1,Yes,Candidate,
+20,204,56,Yes,4,5,4,3,1,Yes,Candidate,
+21,201,41,Yes,4,4,4,4,1,No,,
+22,315,68,Yes,5,5,5,3,2,Yes,Candidate,
+23,303,67,Yes,4,4,5,4,2,Yes,Candidate,
+24,210,43,Yes,5,5,5,4,1,No,,
+25,204,34,Yes,4,4,5,4,2,Yes,Opponent,
+26,202,38,Yes,5,5,5,3,1,Yes,Opponent,
+27,110,71,Yes,4,5,4,4,2,Yes,Candidate,
+28,317,73,Yes,4,4,4,4,2,No,,
+29,304,34,Yes,4,4,4,4,1,No,,
+30,112,25,Yes,4,5,4,3,2,Yes,Opponent,
+31,403,38,Yes,5,4,5,4,1,Yes,Candidate,I don't really know much about either candidate to be honest. Didn't see much campaigning in our area.
+32,301,64,Yes,5,5,5,4,1,No,,"Everything else about his platform was great, but his police reform stance was a dealbreaker for me."
+33,405,59,No,5,5,4,4,1,Yes,Opponent,Was there an election? I must have missed it.
+34,314,50,Yes,4,5,4,3,1,Yes,Candidate,I think I got one mailer but didn't pay attention. Busy with work and kids.
+35,307,52,Yes,4,4,5,4,2,No,,I wish I knew more about the candidates. Feel like I didn't hear much about what they wanted to do.
+36,403,65,Yes,4,4,5,4,2,No,,His housing policies sound good but I never saw him campaign here.
+37,403,72,Yes,4,5,4,4,1,No,,I would have liked to vote for him but honestly didn't know enough about him.
+38,208,69,No,4,5,4,3,1,Yes,Opponent,The transit plan sounds great. Wish I'd heard more about it before election day.
+39,404,64,Yes,5,4,4,3,2,Yes,Opponent,"I really liked him and what he stood for, but I couldn't get past his position on police reform. It felt too extreme."
+40,412,45,No,5,4,5,3,1,No,,"I agree with a lot of what he says, just didn't feel engaged enough to vote."
+41,408,56,Yes,5,5,4,4,2,Yes,Candidate,His childcare plan is exactly what we need. Too bad more people don't know about it.
+42,403,65,No,5,4,5,3,2,No,,"I liked what I heard about his policies, but it felt like he wasn't really campaigning for us."
+43,307,31,No,5,5,5,4,2,Yes,Opponent,"Affordable housing matters here too, but I guess we weren't a priority."
+44,306,64,Yes,5,4,4,3,2,No,,Would have voted if I'd known more. Barely saw any campaigning.
+45,103,36,Yes,4,5,5,3,1,No,,The issues he cares about matter to us too. We just didn't hear about it.
+46,306,67,Yes,4,4,4,4,1,No,,I support his platform but honestly forgot it was election day.
+47,410,45,Yes,4,4,4,4,1,Yes,Candidate,"His policies align with what I want, but I didn't feel like he was really trying to reach voters like me."
+48,318,50,No,5,4,4,3,1,No,,Great ideas on paper. Just wish he'd made more of an effort in our community.
+49,404,34,Yes,5,5,5,3,1,No,,
+50,310,32,Yes,5,4,4,4,1,No,,
+51,314,54,Yes,5,5,4,3,2,Yes,Opponent,
+52,314,74,Yes,5,5,4,4,1,No,,
+53,403,58,No,5,4,4,4,2,No,,
+54,404,44,No,5,4,4,4,1,Yes,Opponent,
+55,412,73,No,4,5,5,3,1,No,,
+56,310,36,No,4,5,4,3,2,No,,
+57,108,67,Yes,5,4,5,3,2,Yes,Candidate,
+58,318,64,Yes,5,5,5,4,2,Yes,Candidate,
+59,405,50,No,5,4,4,4,1,No,,
+60,301,53,No,5,4,4,4,1,Yes,Opponent,
+61,409,65,Yes,5,4,5,4,1,Yes,Opponent,
+62,404,53,No,5,4,5,4,1,Yes,Opponent,
+63,107,67,No,4,5,4,4,2,No,,
+64,413,72,No,5,5,4,4,1,Yes,Opponent,
+65,404,57,No,4,5,5,3,2,No,,
+66,403,65,No,5,4,4,3,2,Yes,Opponent,
+67,402,52,Yes,5,4,4,3,2,Yes,Candidate,
+68,405,31,No,4,5,5,3,1,No,,
+69,107,32,Yes,4,4,5,3,2,No,,
+70,301,73,Yes,5,4,5,3,2,Yes,Candidate,"I really liked him and what he stood for, but I couldn't get past his position on police reform. It felt too extreme."
+71,302,70,Yes,3,3,2,3,1,Yes,Opponent,"He wasn't all that great to begin with, then his stance on police reform put me over the edge."
+72,104,52,Yes,2,2,2,3,2,Yes,Opponent,I appreciate his passion but disagree with his approach to development and zoning.
+73,105,38,Yes,3,2,2,3,2,Yes,Candidate,He came to our neighborhood several times. I just don't think his economic policies make sense.
+74,105,38,Yes,3,3,1,3,2,Yes,Opponent,I'm familiar with his platform but his positions on property taxes and business regulations are dealbreakers for me.
+75,302,71,Yes,3,3,2,2,2,Yes,Opponent,His housing policies would hurt property values and development.
+76,302,40,Yes,2,2,1,2,2,No,,
+77,406,73,Yes,2,3,2,2,1,No,,"I already disagreed with most of his policies, but the police reform position sealed it for me."
+78,102,65,Yes,2,3,1,3,1,Yes,Opponent,"I understand he cares, but his policies are economically unsound."
+79,411,39,Yes,3,3,2,2,1,No,,
+80,106,66,Yes,2,3,2,2,1,Yes,Opponent,His proposals would drive businesses out of New York. Bad for everyone.
+81,411,41,Yes,2,2,1,3,1,Yes,Opponent,
+82,102,69,Yes,2,2,2,2,1,Yes,Candidate,
+83,106,35,Yes,2,3,1,2,1,Yes,Opponent,
+84,406,46,Yes,2,3,2,3,1,Yes,Candidate,
+85,106,63,Yes,3,3,1,3,2,No,,
+86,406,68,Yes,2,3,2,2,2,Yes,Opponent,
+87,503,57,Yes,2,3,1,2,1,Yes,Candidate,
+88,102,47,Yes,3,3,2,3,2,Yes,Candidate,
+89,102,43,Yes,3,3,1,2,1,Yes,Opponent,
+90,104,73,No,2,3,2,3,1,Yes,Candidate,
+91,102,72,Yes,2,3,1,2,1,Yes,Candidate,
+92,105,63,Yes,2,2,1,2,1,Yes,Opponent,
+93,302,35,Yes,3,3,1,2,2,No,,
+94,106,40,Yes,3,2,1,3,2,Yes,Opponent,
+95,106,65,No,2,2,1,2,2,Yes,Opponent,
+96,104,74,No,3,3,1,2,1,Yes,Opponent,
+97,302,51,Yes,3,2,1,2,1,No,,
+98,302,62,Yes,3,3,2,2,1,No,,
+99,106,38,Yes,2,3,1,3,1,Yes,Opponent,
+100,302,42,Yes,2,2,1,3,2,No,,
