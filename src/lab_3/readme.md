@@ -1,23 +1,15 @@
 # Lab 3: Mayoral Mystery
 
-The goals for this tutorial are:
-
-- to experiment working with maps and geospatial data
-- to build data exploration skillsets with ambiguity
-- to iterate with visualizations to discover data insights
-- to hone the data → visualization workflow
-
 The assignment requirements are as follows:
 
 1. Create a dashboard in the `index.md` file using the data provided in the `/data` folder. Please also include written context for the answers that is supported by visualizations.
-2. Create **at least two, but no more than four visualizations** with Observable Plot (or d3, if you feel ready for that, but not recommended). 
-3. One of your visualizations **should be a map of the nyc districts** with some data visualized. That data can be points on the map, or a choropleth. The `index.md` file has some initial work for the geoJSON data to get you started. 
+2. Create **at least two, but no more than four visualizations** with Observable Plot.
+3. One of your visualizations **should be a chloropleth map of the nyc districts** with some data visualized. That data can be points on the choropleth map. The `index.md` file has some initial work for the geoJSON data to get you started. 
 4. This lab is different in that **you are not obligated to answer any data questions in particular**, but some relevant insights do exist. Since this lab has less structure, here are some questions that you may explore to get you started if you feel lost: 
-   - How did the candidate do, overall? How do the results vary by district? By income level?
-   - How did people feel about the issues? What other information do the survey responses tell us?
+   - How did the candidate do, overall? How do the results vary by district? By income level? - 
+   - How did people feel about the issues? What other information do the survey responses tell us? - sentiment of supporters vs. opponents
    - What was the extent of the Get Out The Vote campaign? Was it successful?
    - This candidate would like to run again. What would you suggest for a successful next campaign?
-5. Submit your [deployed link](#4-set-up-your-github-pages-for-your-deployment) as a comment on the lab 3 commons post.
 
 
 Since this lab doesn't have a set slate of research questions, take time to understand the data, consider what you think is important context for the staff, and present it thougtfully and clearly. As mentioned in the syllabus (pdf in the home page of [commons](https://data73200fall2025.commons.gc.cuny.edu/)), for labs 3 and 4, you will be graded on:
