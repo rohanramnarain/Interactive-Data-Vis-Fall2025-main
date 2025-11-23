@@ -239,6 +239,7 @@ Plot.plot({
       y: "issue",
       fill: "group",
       stroke: "white",
+      tip: true,
       title: d => `${d.issue} — ${d.group}\nNet sentiment: ${(d.netSentiment * 100).toFixed(0)}%\nAvg alignment: ${d.avgAlignment ? d.avgAlignment.toFixed(2) : "n/a"}\nResponses: ${d.responses}`
     })
   ]
@@ -520,7 +521,7 @@ Before combining predictors, each lever can be evaluated on its own to see how d
   simpleRegressions.forEach(reg => {
     const plot = Plot.plot({
       width: 900,
-      height: 360,
+      height: 560,
       marginLeft: 80,
       marginRight: 40,
       marginBottom: 55,
@@ -634,21 +635,97 @@ Plot.plot({
 
 ```js
 (() => {
-  const container = document.createElement("div");
-  const formula = document.createElement("pre");
-  formula.style.background = "#111";
-  formula.style.color = "#f1f1f1";
-  formula.style.padding = "0.75rem";
-  formula.style.borderRadius = "4px";
-  formula.style.whiteSpace = "pre-wrap";
-  formula.textContent = `VoteShare = ${coeffs[0].toFixed(3)} + ${coeffs[1].toFixed(3)} * Doors_k + ${coeffs[2].toFixed(3)} * Hours + ${coeffs[3].toFixed(3)} * Income_k`;
+  const wrapper = document.createElement("div");
+  wrapper.style.marginTop = "1rem";
+  wrapper.style.marginBottom = "0.5rem";
+
+  const heading = document.createElement("p");
+  heading.textContent = "Multivariate regression:";
+  heading.style.fontWeight = "600";
+  heading.style.margin = "0 0 0.35rem";
+
+  const equation = document.createElement("div");
+  equation.style.display = "flex";
+  equation.style.flexWrap = "wrap";
+  equation.style.alignItems = "center";
+  equation.style.gap = "0.45rem";
+  equation.style.padding = "0.85rem 1rem";
+  equation.style.borderRadius = "6px";
+  equation.style.background = "linear-gradient(120deg, #0f172a, #1e1b4b)";
+  equation.style.color = "#f8fafc";
+  equation.style.fontFamily = "Menlo, Consolas, 'Source Code Pro', monospace";
+  equation.style.fontSize = "0.95rem";
+
+  const name = document.createElement("span");
+  name.textContent = "VoteShare";
+  name.style.fontWeight = "700";
+
+  const equals = document.createElement("span");
+  equals.textContent = "=";
+  equals.style.opacity = "0.8";
+
+  const termColors = ["#60a5fa", "#34d399", "#fbbf24", "#f87171"];
+  const termData = [
+    { coef: coeffs[0], label: "Intercept", color: termColors[0] },
+    { coef: coeffs[1], label: "Doors_k", color: termColors[1] },
+    { coef: coeffs[2], label: "Hours", color: termColors[2] },
+    { coef: coeffs[3], label: "Income_k", color: termColors[3] }
+  ];
+
+  const makeBadge = (text, color) => {
+    const badge = document.createElement("span");
+    badge.textContent = text;
+    badge.style.background = color;
+    badge.style.color = "#0f172a";
+    badge.style.padding = "0 0.45rem";
+    badge.style.borderRadius = "999px";
+    badge.style.fontWeight = "600";
+    badge.style.letterSpacing = "0.02em";
+    return badge;
+  };
+
+  const makeTerm = (coef, variable, color) => {
+    const term = document.createElement("span");
+    term.style.display = "inline-flex";
+    term.style.alignItems = "center";
+    term.style.gap = "0.35rem";
+
+    const coefBadge = makeBadge(coef.toFixed(3), color);
+    term.append(coefBadge);
+
+    if (variable !== "Intercept") {
+      const multiply = document.createElement("span");
+      multiply.textContent = "×";
+      multiply.style.opacity = "0.7";
+      const varLabel = document.createElement("span");
+      varLabel.textContent = variable;
+      varLabel.style.borderBottom = "1px dotted rgba(248, 250, 252, 0.4)";
+      varLabel.style.paddingBottom = "1px";
+      term.append(multiply, varLabel);
+    }
+
+    return term;
+  };
+
+  equation.append(name, equals);
+  termData.forEach((term, idx) => {
+    equation.append(makeTerm(term.coef, term.label, term.color));
+    if (idx < termData.length - 1) {
+      const plus = document.createElement("span");
+      plus.textContent = "+";
+      plus.style.opacity = "0.8";
+      equation.append(plus);
+    }
+  });
 
   const note = document.createElement("p");
-  note.style.margin = "0.4rem 0 0";
+  note.style.margin = "0.5rem 0 0";
+  note.style.fontSize = "0.9rem";
+  note.style.color = "#475569";
   note.textContent = "Doors_k and Income_k are measured in thousands (1K doors knocked, $1K median income).";
 
-  container.append(formula, note);
-  return container;
+  wrapper.append(heading, equation, note);
+  return wrapper;
 })()
 ```
 
@@ -683,7 +760,7 @@ Plot.plot({
   const doorSlope = doorSingle ? (doorSingle.stats.slope * 100).toFixed(1) : (coeffs[1] * 100).toFixed(1);
   const hourSlope = hoursSingle ? (hoursSingle.stats.slope * 100).toFixed(1) : (coeffs[2] * 100).toFixed(1);
   const incomeSlope = incomeSingle ? Math.abs(incomeSingle.stats.slope * 100).toFixed(1) : Math.abs(coeffs[3] * 100).toFixed(1);
-  recommendation.textContent = `Door-only regression shows roughly ${doorSlope} percentage-point gain in vote share per additional thousand doors, and each hour of candidate time adds about ${hourSlope} points on its own. Wealthier districts still slip by ~${incomeSlope} points per extra $1K in median income, underscoring the need for targeted economic framing when campaigning uptown. The combined model keeps those coefficients intact (R² ≈ ${rsqShare.toFixed(2)}), so the next campaign should double down on large-scale canvassing plus candidate visibility in working- and middle-income areas, while pairing high-income outreach with persuasion messaging to offset the negative income slope.`;
+  recommendation.textContent = `Door-only regression shows roughly ${doorSlope} percentage-point gain in vote share per additional thousand doors, and each hour of candidate time adds about ${hourSlope} points on its own. Wealthier districts still slip by ~${incomeSlope} points per extra $1K in median income, underscoring the need for targeted economic framing when campaigning uptown. The combined model keeps those coefficients intact (R² ≈ ${rsqShare.toFixed(2)}), so the next campaign should double down on large-scale canvassing plus candidate visibility in working- and middle-income areas, while pairing high-income outreach with persuasion messaging to offset the negative income slope. You should also note that if this graph here showing predicted vs. actual is read properly, it can show which districts the candidate overperformed in and underperformed in as well.`;
   return recommendation;
 })()
 ```
