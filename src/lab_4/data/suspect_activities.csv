@@ -1,0 +1,21 @@
+date,suspect,activity_type,intensity,duration_days,notes
+2023-01-15,Clearwater Fishing Lodge,Grand Opening,High,1,Lodge officially opens for business
+2023-02-01,Clearwater Fishing Lodge,Regular Operations,Medium,730,Daily fishing tours and boat rentals ongoing
+2023-03-15,ChemTech Manufacturing,Maintenance Shutdown,High,7,Quarterly equipment maintenance and cleaning
+2023-04-10,Riverside Farm,Spring Fertilizer Application,High,14,Nitrogen and phosphorus application to fields
+2023-05-01,Lakeview Resort,Construction Phase 1,High,45,New wing construction begins
+2023-06-20,ChemTech Manufacturing,Maintenance Shutdown,High,8,Quarterly equipment maintenance and cleaning
+2023-07-08,Clearwater Fishing Lodge,Peak Season,High,60,Increased fishing activity and boat traffic
+2023-09-05,Riverside Farm,Fall Fertilizer Application,High,12,Pre-harvest fertilizer application
+2023-09-18,ChemTech Manufacturing,Maintenance Shutdown,High,7,Quarterly equipment maintenance and cleaning
+2023-10-15,Lakeview Resort,Dock Expansion,Medium,30,Marina dock construction
+2023-12-10,ChemTech Manufacturing,Maintenance Shutdown,High,6,Year-end maintenance shutdown
+2024-03-12,ChemTech Manufacturing,Maintenance Shutdown,High,7,Quarterly equipment maintenance and cleaning
+2024-04-15,Riverside Farm,Spring Fertilizer Application,High,15,Spring nitrogen application
+2024-05-10,Lakeview Resort,Construction Phase 2,High,60,Second building phase begins
+2024-06-25,ChemTech Manufacturing,Maintenance Shutdown,High,9,Extended maintenance period
+2024-07-01,Clearwater Fishing Lodge,Peak Season,High,75,Extended peak season operations
+2024-09-10,Riverside Farm,Fall Fertilizer Application,High,10,Fall fertilizer application
+2024-09-15,ChemTech Manufacturing,Maintenance Shutdown,High,7,Quarterly maintenance shutdown
+2024-10-20,Lakeview Resort,Landscaping Work,Low,20,Final construction touches
+2024-12-08,ChemTech Manufacturing,Maintenance Shutdown,High,8,Year-end maintenance period

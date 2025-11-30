@@ -1,0 +1,5 @@
+station_id,station_name,distance_to_chemtech_m,distance_to_farm_m,distance_to_resort_m,distance_to_lodge_m,water_depth_m
+North,North Shore,3200,600,3400,5100,9
+South,South Shore,5400,5200,4600,800,11
+East,East Shore,4400,3600,700,4500,7
+West,West Shore,800,3000,4200,5600,10

@@ -38,7 +38,16 @@ export default {
         { name: "Instructions", path: "/lab_3/readme" },
         { name: "Dashboard", path: "/lab_3/index" },
       ],
+    },
+    {
+      name: "Lab 4: Clearwater Crisis",
+      open: true,
+      pages: [
+        { name: "Instructions", path: "/lab_4/readme" },
+        { name: "Dashboard", path: "/lab_4/index" },
+      ],
     }
+
   ],
 
   // Content to add to the head of the page, e.g. for a favicon:
